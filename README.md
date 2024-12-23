@@ -1,5 +1,5 @@
 
-# <h1 align="center">Python</h1>
+# <h1 align="center">🐍 Python</h1>
 
 <p align="center">Repositório para o curso de Python da Udemy</p>
 
