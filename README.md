@@ -11,3 +11,8 @@
  - Laços de Repetição;
  - Introdução a Estrutura de Dados.
  - Mini-Projeto validador/gerador de CPF.
+
+#### 2ª Seão aborda conceitos intermediários da linguagem. 
+---
+ - Funções, Closure, First-Class Functions, Higher Order Functions;
+ - Dicionários, Conjuntos;
