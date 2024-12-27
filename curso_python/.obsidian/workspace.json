@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "10. Aula 10"
             }
+          },
+          {
+            "id": "222db88d2446ef7b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "11. Aula 11.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "11. Aula 11"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6521b9d9ed28bf1c",
@@ -165,11 +179,12 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "df12614746defcf8",
+  "active": "222db88d2446ef7b",
   "lastOpenFiles": [
+    "10. Aula 10.md",
+    "11. Aula 11.md",
     "Referencias.md",
     "Closure.md",
-    "10. Aula 10.md",
     "8. Aula 8.md",
     "9. Aula 9.md",
     "Excalidraw",
