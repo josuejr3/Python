@@ -62,6 +62,8 @@ def criar_multiplicador(multiplicador):
 duplicar = criar_multiplicador(2)
 print(duplicar(100))
 
+# ================ INTRODUCAO A DICIONARIOS =============
+
 
 
 
