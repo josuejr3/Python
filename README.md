@@ -16,3 +16,4 @@
 ---
  - Funções, Closure, First-Class Functions, Higher Order Functions;
  - Dicionários, Conjuntos;
+ - Funções Lambda
