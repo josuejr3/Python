@@ -14,6 +14,9 @@
 
 #### 2ª Seão aborda conceitos intermediários da linguagem. 
 ---
- - Funções, Closure, First-Class Functions, Higher Order Functions;
- - Dicionários, Conjuntos;
- - Funções Lambda
+ - Funções, Closure, First-Class Functions e Higher Order Functions;
+ - Dicionários e Conjuntos;
+ - Funções Lambda;
+ - Mapeamento e Filtros;
+ - List Comprehension, Set Comprehension e Dictionary Comprehension;
+ - Argumentos **kwargs e função isinstance();
