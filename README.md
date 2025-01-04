@@ -20,3 +20,7 @@
  - Mapeamento e Filtros;
  - List Comprehension, Set Comprehension e Dictionary Comprehension;
  - Argumentos **kwargs e função isinstance();
+ - Iterators, Iteráveis e Generator Functions e Expressions;
+ - Valores Truthy, Falsy, Tipos imutáveis e métodos dir, getattr e hasattr;
+ - Tratamento de exceções com Try-Except-Finally e Else;
+ - Definindo e modificando exceções com raises;
