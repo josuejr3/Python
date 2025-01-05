@@ -24,3 +24,6 @@
  - Valores Truthy, Falsy, Tipos imutáveis e métodos dir, getattr e hasattr;
  - Tratamento de exceções com Try-Except-Finally e Else;
  - Definindo e modificando exceções com raises;
+ - Métodos de importação, init, name e mais;
+ - Modularização de projetos e packages;
+
