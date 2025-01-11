@@ -26,4 +26,6 @@
  - Definindo e modificando exceções com raises;
  - Métodos de importação, init, name e mais;
  - Modularização de projetos e packages;
-
+ - Variáveis livres e nonlocal;
+ - Funções decoradoras, aplicação de parâmetros em decoradores;
+ - Uso de zip e zip_longest;
