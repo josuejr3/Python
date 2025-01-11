@@ -252,6 +252,8 @@ dc = {
 	in produto_1.items()
 }
 
+# dc = {chave : valor if isinstance(valor, str) else valor for chave, valor in produto_1.items()}
+
 print(dc)
 
 s1 = {i for i in range(10)}
