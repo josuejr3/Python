@@ -12,7 +12,7 @@
  - Introdução a Estrutura de Dados.
  - Mini-Projeto validador/gerador de CPF.
 
-#### 2ª Seão aborda conceitos intermediários da linguagem. 
+#### 2ª Seção aborda conceitos intermediários da linguagem. 
 ---
  - Funções, Closure, First-Class Functions e Higher Order Functions;
  - Dicionários e Conjuntos;
