@@ -29,3 +29,6 @@
  - Variáveis livres e nonlocal;
  - Funções decoradoras, aplicação de parâmetros em decoradores;
  - Uso de zip e zip_longest;
+ - Ferramentas do módulo itertools: combinations, product e permutations;
+ - Programação funcional com groupby, map, partial, filter, reduce e GeneratorType
+ - Funções recursivas e limite de recursão;
