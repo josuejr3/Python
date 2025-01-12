@@ -12,7 +12,7 @@
  - Introdução a Estrutura de Dados.
  - Mini-Projeto validador/gerador de CPF.
 
-#### 2ª Seão aborda conceitos intermediários da linguagem. 
+#### 2ª Seção aborda conceitos intermediários da linguagem. 
 ---
  - Funções, Closure, First-Class Functions e Higher Order Functions;
  - Dicionários e Conjuntos;
@@ -29,3 +29,6 @@
  - Variáveis livres e nonlocal;
  - Funções decoradoras, aplicação de parâmetros em decoradores;
  - Uso de zip e zip_longest;
+ - Ferramentas do módulo itertools: combinations, product e permutations;
+ - Programação funcional com groupby, map, partial, filter, reduce e GeneratorType
+ - Funções recursivas e limite de recursão;
