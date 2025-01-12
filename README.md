@@ -32,3 +32,4 @@
  - Ferramentas do módulo itertools: combinations, product e permutations;
  - Programação funcional com groupby, map, partial, filter, reduce e GeneratorType
  - Funções recursivas e limite de recursão;
+ - Ambientais virtuais, pip e arquivo requirements.txt
