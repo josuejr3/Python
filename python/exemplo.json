@@ -1,0 +1,17 @@
+//[
+//  {"nome":"Luiz", "lastName": "Miranda"},
+//  {"nome":"Luiz", "lastName": "Miranda"},
+//  {"nome":"Luiz", "lastName": "Miranda"}
+//]
+
+{
+	"name": "Luiz",
+	"lastName": "Miranda",
+	"age": 22,
+	"addresses": [
+		{"line1": "av. brasil"},
+		{"line2": "av. amapa"}
+	]
+}
+
+
