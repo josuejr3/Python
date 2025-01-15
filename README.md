@@ -3,7 +3,7 @@
 
 <p align="center">Repositório para o curso de Python da Udemy</p>
 
-#### 1ª Seção aborda temas introdutórios e lógica de programação.
+#### 1ª Seção - Algoritmos e Lógica de Programação.
 ---
  - Tipos de Dados;
  - Variáveis;
@@ -12,7 +12,7 @@
  - Introdução a Estrutura de Dados.
  - Mini-Projeto validador/gerador de CPF.
 
-#### 2ª Seção aborda conceitos intermediários da linguagem. 
+#### 2ª Seção - Intermediário em Python e Programação Funcional. 
 ---
  - Funções, Closure, First-Class Functions e Higher Order Functions;
  - Dicionários e Conjuntos;
@@ -32,4 +32,11 @@
  - Ferramentas do módulo itertools: combinations, product e permutations;
  - Programação funcional com groupby, map, partial, filter, reduce e GeneratorType
  - Funções recursivas e limite de recursão;
- - Ambientais virtuais, pip e arquivo requirements.txt
+ - Ambientais virtuais, pip e arquivo requirements.txt;
+ - Criando, lendo e modificando arquivos com Python (context manager);
+ - Python e JSON;
+ - Mini-Projeto "to-do-list";
+ - Evitando uso de condicionais e Guard Clause;
+ - Positional-Only Parameters e Keyword-Only Arguments.
+
+#### 3ª Seção - Programando em Python com Orientação à Objetos (POO)
