@@ -39,4 +39,5 @@
  - Evitando uso de condicionais e Guard Clause;
  - Positional-Only Parameters e Keyword-Only Arguments.
 
-#### 3ª Seção - Programando em Python com Orientação à Objetos (POO)
+#### 3ª Seção - Programando em Python com Orientação à Objetos (POO).
+---
