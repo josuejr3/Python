@@ -41,3 +41,5 @@
 
 #### 3ª Seção - Programando em Python com Orientação à Objetos (POO).
 ---
+ - Conceitos iniciais de orientação à objetos;
+ - Tipos de métodos usando self, cls e staticmethod;
