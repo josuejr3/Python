@@ -43,3 +43,10 @@
 ---
  - Conceitos iniciais de orientação à objetos;
  - Tipos de métodos usando self, cls e staticmethod;
+ - dict e vars para atributos de classe;
+ - property, getters e setters no Python;
+ - Encapsulamento e modificadores de acesso: public, _protected, __private;
+ - Relações entre classes: agregação, associação e composição;
+ - Herança simples, sobreposição de métodos e a palavra-chave "super" para classes-mãe;
+ - Herança múltipla;
+ - 
