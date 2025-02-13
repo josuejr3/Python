@@ -49,4 +49,4 @@
  - Relações entre classes: agregação, associação e composição;
  - Herança simples, sobreposição de métodos e a palavra-chave "super" para classes-mãe;
  - Herança múltipla;
- - 
+ - Classes abstratas, Polimorfismo e criação de Exceptions em Python Orientado à Objetos;
