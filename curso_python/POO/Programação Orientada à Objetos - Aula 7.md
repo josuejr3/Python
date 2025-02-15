@@ -119,6 +119,28 @@ a.__init__()
 
 ===Obs: é importante as assinaturas do new e também do init serem iguais, caso não queira, posso passar args e kwargs===
 
+---
+ Lista com métodos especiais
+
+```txt
+__lt__(self, other) - self < other  
+__le__(self, other) - self <= other  
+__gt__(self, other) - self > other  
+__ge__(self, other) - self >= other  
+__eq__(self, other) - self == other  
+__ne__(self, other) - self != other  
+__add__(self, other) - self + other  
+__sub__(self, other) - self - other  
+__mul__(self, other) - self * other  
+__truediv__(self, other) - self / other  
+__neg__(self) - -self  
+__str__(self) - str  
+__repr__(self) - str - define uma forma de representação do objeto
+```
+
+
+
+
 
 
 
