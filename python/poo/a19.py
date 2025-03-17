@@ -1,5 +1,5 @@
 # Usando um método especial chamado __ call __
-from traceback import print_tb
+
 
 
 # class CallMe:
