@@ -1,3 +1,3 @@
 ##### O que são dataclasses?
 
-Dataclasses são
+Dataclasses são usadas 
