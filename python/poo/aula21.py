@@ -1,11 +1,15 @@
 # usando dataclasses
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
-@dataclass(init=False)
+@dataclass()
 class Pessoa:
-    nome: str
-    sobrenome: str
+    nome: str = 'Missing'
+    sobrenome: str = 'Not Sent'
+
+    idade: int = 0
+    enderecos: list[str] = field(default_factory=list)
+
 
     # def __post_init__(self):
     #     self.nome_completo = f'{self.nome} {self.sobrenome}'
@@ -22,14 +26,5 @@ class Pessoa:
 
 if __name__ == '__main__':
 
-    p1 = Pessoa('Josue', 'Ferreira')
-    p2 = Pessoa('Joseph', 'Joestar')
+    p1 = Pessoa()
     print(p1)
-    print(p1 == p2)
-    p1.nome_completo = 'Paulo Fernando da Silva'
-    print(p1)
-
-
-    print(p1.nome)
-    p1.nome = 'JOSE'
-    print(p1.nome)
