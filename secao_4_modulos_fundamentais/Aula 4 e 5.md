@@ -60,6 +60,47 @@ from dateutil.relativedelta import relativedelta
 print(data_fim - relativedelta(seconds=59))
 ```
 
+#### <span style="color:rgb(4, 255, 0)">Formatando datas</span>
+
+A formatação de datas é semelhante a criação, utiliza uma função parecida, segue o exemplo abaixo.
+
+```Python
+# primeiro - criar uma data  
+nova_data = datetime.strptime('2022-12-13 07:59:23', "%Y-%m-%d %H:%M:%S")  
+  
+# passando para o formato padrão usando strftime()  
+print(data.strftime(fmt))
+```
+
+Porém, após usar essa função temos um objeto do tipo string. Se quisermos continuar usando os atributos da classe e depois converte-los para string também é possível.
+
+```Python
+print(data.strftime("%Y"), nova_data.year)  
+print(data.strftime("%m"), nova_data.month)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
