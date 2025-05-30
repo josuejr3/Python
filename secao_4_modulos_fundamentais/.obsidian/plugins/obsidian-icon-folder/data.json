@@ -6,7 +6,10 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "LiExcalidrawIcon",
+      "LiMicrochip",
+      "LiWifi",
+      "🖥",
+      "🤖",
       "LiComputer"
     ],
     "recentlyUsedIconsSize": 5,
@@ -31,6 +34,16 @@
     "debugMode": false,
     "useInternalPlugins": false
   },
-  "Excalidraw": "LiExcalidrawIcon",
-  "Seção 3 - Programação Orientada à Objetos": "LiComputer"
+  "main/IA": {
+    "iconName": "LiComputer",
+    "iconColor": "#00ff00"
+  },
+  "main/IoT": {
+    "iconName": "LiMicrochip",
+    "iconColor": "#00ff00"
+  },
+  "main/Redes": {
+    "iconName": "LiWifi",
+    "iconColor": "#00ff00"
+  }
 }

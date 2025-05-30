@@ -1,20 +1,24 @@
 {
   "main": {
-    "id": "4aec6a132c9ff753",
+    "id": "1a762e741b1e88a3",
     "type": "split",
     "children": [
       {
-        "id": "19644959d22d7578",
+        "id": "b202f33135b010e6",
         "type": "tabs",
         "children": [
           {
-            "id": "9b4ba69f371e390b",
+            "id": "5634ec2310993312",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Aula 1.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "Aula 1"
             }
           }
         ]
@@ -23,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "46170f5b5312bce2",
+    "id": "aa52ca6d9da13aad",
     "type": "split",
     "children": [
       {
-        "id": "cb746529d4e04889",
+        "id": "2773030c55ba3ee2",
         "type": "tabs",
         "children": [
           {
-            "id": "3d0a08bb1d59f630",
+            "id": "a4a9b9e89c10789c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +48,7 @@
             }
           },
           {
-            "id": "d57b1609bb6e3132",
+            "id": "7951586d3e4ac4d5",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +65,7 @@
             }
           },
           {
-            "id": "f504a976081d33eb",
+            "id": "62cf0b55a830af88",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -74,23 +78,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5
+    "width": 300,
+    "collapsed": true
   },
   "right": {
-    "id": "6521b9d9ed28bf1c",
+    "id": "332618a4b8fe8469",
     "type": "split",
     "children": [
       {
-        "id": "0d82928037771a5c",
+        "id": "32ae774872d7a0cf",
         "type": "tabs",
         "children": [
           {
-            "id": "9623ae8aeb436fbe",
+            "id": "a7235a0e95bcb512",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Aula 2.md",
+                "file": "Bem-vindo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,54 +105,58 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para 2. Aula 2"
+              "title": "Links inversos para Bem-vindo"
             }
           },
           {
-            "id": "5e1e53742c88868c",
+            "id": "2a9ad0d2c7cbba71",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Aula 2.md",
+                "file": "Bem-vindo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para 2. Aula 2"
+              "title": "Links de saída para Bem-vindo"
             }
           },
           {
-            "id": "e7c7689c59e814bc",
+            "id": "45e4f7d5e82ee97d",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
             }
           },
           {
-            "id": "4be06bcd130955d0",
+            "id": "ea41b4db6237cb66",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Aula 2.md"
+                "file": "Bem-vindo.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de 2. Aula 2"
+              "title": "Sumário de Bem-vindo"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
@@ -158,54 +167,12 @@
       "daily-notes:Abrir a nota de hoje": false,
       "templates:Inserir modelo": false,
       "command-palette:Abrir paleta de comandos": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3d0a08bb1d59f630",
+  "active": "5634ec2310993312",
   "lastOpenFiles": [
-    "Seção 4 - Bibliotecas Fundamentais",
-    "Referencias.md",
-    "Seção 3 - Programação Orientada à Objetos/Programação Orientada à Objetos - Aula 14.md",
-    "Pasted image 20250329172116.png",
-    "Pasted image 20250329171729.png",
-    "Pasted image 20250329155323.png",
-    "Seção 3 - Programação Orientada à Objetos/Programação Orientada à Objetos - Aula 13.md",
-    "Seção 3 - Programação Orientada à Objetos/Programação Orientada à Objetos - Aula 12.md",
-    "Seção 3 - Programação Orientada à Objetos/Programação Orientada à Objetos - Aula 11.md",
-    "Seção 3 - Programação Orientada à Objetos/Programação Orientada à Objetos - Aula 10.md",
-    "15. Aula 15.md",
-    "14. Aula 14.md",
-    "13. Aula 13.md",
-    "12. Aula 12.md",
-    "10. Aula 10.md",
-    "11. Aula 11.md",
-    "9. Aula 9.md",
-    "18. Aula 18.md",
-    "19. Aula 19.md",
-    "16. Aula 16.md",
-    "17. Aula 17.md",
-    "Seção 3 - Programação Orientada à Objetos/Programação Orientada à Objetos - 12.md",
-    "Seção 3 - Programação Orientada à Objetos/Programação Orientada à Objetos - Aula 8.md",
-    "Seção 3 - Programação Orientada à Objetos/Programação Orientada à Objetos - Aula 9.md",
-    "Seção 3 - Programação Orientada à Objetos/Programação Orientada à Objetos - Aula 7.md",
-    "Seção 3 - Programação Orientada à Objetos/Programação Orientada à Objetos - Aula 6.md",
-    "7. Aula 7.md",
-    "4. Aula 4.md",
-    "5. Aula 5.md",
-    "Pasted image 20250131164838.png",
-    "Seção 3 - Programação Orientada à Objetos",
-    "Pasted image 20250112101902.png",
-    "Pasted image 20250112095216.png",
-    "Excalidraw",
-    "main/python/aula7.py",
-    "main/python/aula6.py",
-    "main/python/aula5.py",
-    "Sem título.canvas",
-    "main/python/aula4.py",
-    "main/python/aula3.py",
-    "main/python/aula2.py",
-    "main/curso_python/main",
-    "main/curso_python"
+    "Aula 1.md"
   ]
 }
