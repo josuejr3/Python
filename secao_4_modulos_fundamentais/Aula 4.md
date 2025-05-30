@@ -28,3 +28,5 @@ data_fim = datetime.strptime("12/12/2022 08:20:20", fmt)
   
 print(data_fim - data_inicio)
 ```
+
+Entretanto, o retorno obtido através de uma expressão "algébrica" não 
