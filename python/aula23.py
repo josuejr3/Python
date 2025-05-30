@@ -36,5 +36,6 @@ if __name__ == '__main__':
     lista.append('joao')
     # print(lista[0])
 
+
     for item in lista:
         print(item)
