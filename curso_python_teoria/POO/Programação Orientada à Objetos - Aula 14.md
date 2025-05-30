@@ -152,7 +152,7 @@ print(as_de_espadas.valor)
 print(as_de_espadas.naipe)
 ```
 
-==Obs: podemos definir valores padrão
+==Obs: podemos definir valores padrão==
 
 - Podemos ainda usar NamedTuple do pacote typing, irá funcionar semelhante as dataclasses
 
