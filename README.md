@@ -52,3 +52,10 @@
  - Classes abstratas, Polimorfismo e criação de Exceptions em Python Orientado à Objetos;
  - Métodos especiais, new e init, context manager, funções decoradoras e decoradores com classes,
    decoradores com métodos, método especial call e classes decoradoras;
+ - Metaclasses;
+ - Docstrings e Enums e dataclasses;
+ - Valores padrão, namedtuple, field e fields.
+
+#### 4ª Seção - Principais módulos Python: OS, datetime, sys, json, csv, selenium, pillow e mais.
+---
+
