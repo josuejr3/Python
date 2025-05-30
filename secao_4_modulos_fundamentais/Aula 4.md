@@ -29,4 +29,53 @@ data_fim = datetime.strptime("12/12/2022 08:20:20", fmt)
 print(data_fim - data_inicio)
 ```
 
-Entretanto, o retorno obtido através de uma expressão "algébrica" não 
+Entretanto, o retorno obtido através de uma expressão "algébrica" não é uma data no formato padrão. O retorno é a quantidade de dias entre essas duas datas (inicial e final). O nome desse retorno é "timedelta". Sabemos que delta na matemática serve para representar variações, ou seja, quando temos uma quantidade inicial de algo e uma quantidade final. Isso é representado aqui como esse algo sendo o nosso tempo.
+
+O objeto timedelta tem alguns atributos específicos a data e hora que podemos usar, como por exemplo "days", "seconds" e "microseconds". Além disso, também posso instanciar timedelta.
+
+```Python
+# obtendo mais dados a partir do timedelta  
+delta = data_fim - data_inicio  
+print(delta.days, delta.seconds, delta.total_seconds(), delta.microseconds)
+
+timed = timedelta(days=10)
+print(data_fim + timed)
+```
+
+-  Links importantes para bibliotecas de datetime e timedelta
+
+	https://dateutil.readthedocs.io/en/stable/relativedelta.html
+	https://docs.python.org/3/library/datetime.html#timedelta-objects
+
+Uma alternativa para o timedelta é o "*dateutil.relativetimedelta*", necessário instalar o pacote
+
+```cmd
+pip install python-dateutil types-python-dateutil
+```
+
+A diferença da timedelta para a relativedelta é praticamente que a segunda oferece uma maior quantidade de atributos e parâmetros para ajuste.
+
+```python
+from dateutil.relativedelta import relativedelta  
+print(data_fim - relativedelta(seconds=59))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
