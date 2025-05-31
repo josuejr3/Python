@@ -16,15 +16,14 @@ data_emprestimo = datetime.strptime("20/12/2022", "%d/%m/%Y")
 # ex: 1_000_000
 
 valor_parcela = 1_000_000 / 60
-
 soma = 0
 
 for i in range(5):
     for j in range(12):
-        print(datetime.strftime(data_emprestimo, "%d/%m/%Y"), f"Parcela {j+1}: {valor_parcela:.2f}")
+        print(datetime.strftime(data_emprestimo, "%d/%m/%Y"), f"Parcela {j+1}: R$ {valor_parcela:,.2f}")
         data_emprestimo = data_emprestimo + relativedelta(months=+1)
         soma += 16666.67
 
-print(round(soma))
+
 
 
