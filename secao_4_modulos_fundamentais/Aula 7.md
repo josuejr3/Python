@@ -24,6 +24,10 @@ print(calendar.THURSDAY)
 # enquanto que o segundo diz o ultimo dia 30, 31, 29...
 
 print(calendar.day_name[calendar.weekday(1500, 4, 22)])
+
+# codigo para ver as semanas  
+for week in calendar.monthcalendar(2025, 6):  
+    print(list(enumerate(week)))
 ```
 
 

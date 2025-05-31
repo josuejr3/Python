@@ -10,11 +10,17 @@
 
 import calendar
 
-print(calendar.calendar(2022))
-print(calendar.month(2025, 2))
+#print(calendar.calendar(2022))
+#print(calendar.month(2025, 2))
 
-print(calendar.monthrange(2025, 6))
-print(calendar.day_name[calendar.weekday(1500, 4, 22)])
+#print(calendar.monthrange(2025, 6))
+#print(calendar.day_name[calendar.weekday(1500, 4, 22)])
 # print(calendar.THURSDAY)
 
 # o primeiro item da tupla informa se o primeiro dia foi em um seg, ter, qua, qui, sex, sab, dom
+
+#print(calendar.monthcalendar(2025, 6))
+
+# codigo para ver as semanas
+for week in calendar.monthcalendar(2025, 6):
+    print(list(enumerate(week)))
