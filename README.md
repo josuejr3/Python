@@ -58,4 +58,6 @@
 
 #### 4ª Seção - Principais módulos Python: OS, datetime, sys, json, csv, selenium, pillow e mais.
 ---
+ - Módulo de datetime, calendar e locale para tarefas que envolvem tempo e local;
+ - Módulo so para interação direta com o sistema operacional;
 
