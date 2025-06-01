@@ -54,3 +54,9 @@ Todas as pastas são copiadas para a nova. Esse função de tree é usada també
 shutil.rmtree(NOVA_PASTA)
 ```
 
+-  As funções mais importantes
+
+	shutil.copy - copia um único arquivo ou pasta
+	shutil.copytree - copia recursivamente
+	shutil.rmtree - remove recursivamente
+	shutil.move ou os.rename - renomeia um arquivo
