@@ -45,5 +45,19 @@ Lembrando que o resultado de um os.walk é uma tupla sempre com três elementos.
 -  O segundo elemento é uma lista de subdiretórios (dirs);
 -  Já o terceiro é uma lista de arquivos do diretório atual.
 
-Além disso, a biblioteca os.path me permite verificar se um diretório que eu estou tentando acessar é realmente um diretório valido com a função "os.path.isdir"
+Além disso, a biblioteca os.path me permite verificar se um diretório que eu estou tentando acessar é realmente um diretório valido com a função "os.path.isdir". Outra coisa importante é o uso da função "unlink()" ela apaga todos os arquivos dentro de uma pasta e eles <mark style="background: #FF5582A6;">NÃO PODEM SER RECUPERADOS.
+</mark>
 
+```Python
+counter = count()  
+for root, dirs, files in os.walk(caminho):  
+    the_counter = next(counter)  
+    print("Pasta atual: ", root, counter)  
+  
+    for dir_ in dirs:  
+        print("  ", the_counter, "Dir: ", dir_)  
+  
+    for file_ in files:  
+        caminho_completo_arquivo = os.path.join(root, file_)  
+        print("  ", the_counter, "File: ", caminho_completo_arquivo)
+```

@@ -23,9 +23,10 @@ for root, dirs, files in os.walk(caminho):
     print("Pasta atual: ", root, counter)
 
     for dir_ in dirs:
-        print("  ", the_counter, "Dir: ", root)
+        print("  ", the_counter, "Dir: ", dir_)
 
     for file_ in files:
-        print("  ", the_counter, "File: ", files)
+        caminho_completo_arquivo = os.path.join(root, file_)
+        print("  ", the_counter, "File: ", caminho_completo_arquivo)
 
 
