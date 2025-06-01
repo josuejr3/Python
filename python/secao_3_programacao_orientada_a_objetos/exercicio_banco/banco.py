@@ -1,5 +1,5 @@
 from conta import Conta
-from exercicio_banco.cliente import Cliente
+from secao_3_programacao_orientada_a_objetos.exercicio_banco.cliente import Cliente
 from pessoa import Pessoa
 from contacorrente import ContaCorrente
 from contapoupanca import ContaPoupanca

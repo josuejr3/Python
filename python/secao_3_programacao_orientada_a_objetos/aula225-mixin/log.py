@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from poo.a6 import endereco
+from secao_3_programacao_orientada_a_objetos.a6 import endereco
 
 # define o diretorio do arquivo log.txt
 LOG_FILE = Path(__file__).parent / 'log.txt'
