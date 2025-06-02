@@ -27,7 +27,7 @@ print(teste / "ideias" / "file.txt")
 print(Path.home())
 
 # Criando de fato um novo arquivo
-Path.mkdir(teste)
+Path.mkdir(teste, exist_ok=True)
 arquivo = teste / 'arquivoo_teste19.txt'
 arquivo.touch()
 print(arquivo)
@@ -43,9 +43,12 @@ arquivo.touch()
 arquivo.write_text('OPA')
 
 print(arquivo.read_text())
+print(teste.exists())
 
 
-
+# Removendo arquivos e pastas
+# Podemos remover pastas usando rmdir, porém ela so remove se a pasta estiver vazia
+# do contrario, é necessario fazer uma exclusão recursiva.
 
 
 

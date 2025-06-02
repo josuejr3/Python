@@ -4,39 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "c5c05a1c580cfdc9",
+        "id": "b3e03d909dde0c5d",
         "type": "tabs",
         "children": [
           {
-            "id": "de5d7c04f0e1a762",
+            "id": "e6641643690fe21a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Aula 16, 17 e 18.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Aula 16, 17 e 18"
-            }
-          },
-          {
-            "id": "0b842ca7ec9b79c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Aula 19.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Aula 19"
+              "title": "Nova aba"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -186,7 +167,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0b842ca7ec9b79c4",
+  "active": "e6641643690fe21a",
   "lastOpenFiles": [
     "Aula 16, 17 e 18.md",
     "Aula 19.md",

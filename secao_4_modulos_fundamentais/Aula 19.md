@@ -52,7 +52,12 @@ print(arquivo)
 Basicamente no código acima, antes de criar o arquivo, foi necessário criar a pasta, uma vez que ela não existia. Após isso, o arquivo txt foi criado. Ainda sobre o código acima, outra opção de criação de pasta seria chamar pelo diretório.
 
 ```Python
-teste.mkdir()
+teste.mkdir(exist_ok=True)
+
+# Podemos verificar a existência da pasta com um argumento da função mkdir, ou com uma função particular
+
+if (teste.exists()):
+	...
 ```
 
 -  Exclusão, escrita e leitura de arquivos.
@@ -69,5 +74,11 @@ arquivo.touch()
 arquivo.write_text('OPA')  
   
 print(arquivo.read_text())
+
+# Removendo arquivos e pastas  
+# Podemos remover pastas usando rmdir, porém ela so remove se a pasta estiver vazia  
+# do contrario, é necessario fazer uma exclusão recursiva.
+
+# Além disso, podemos usar funções da shutil para remoção em cascata ou "arvore"
 ```
 
