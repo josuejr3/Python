@@ -1,0 +1,82 @@
+
+#### <span style="color:rgb(4, 255, 0)">JSON</span>
+
+JSON (Javascript Object Notation) é uma estrutura de dados que permite a serialização de objetos em texto simples que permite facilitar a transmissão de dados através da rede, APIs web ou outros meios de comunicação. 
+
+O JSON suporta os seguintes tipos de dados: 
+
+-  Números: podem ser tanto inteiros como com ponto flutuante, ex: 43 e 3.14;
+-  Strings: são cadeias de caracteres, como "Hello World!" ou "12345";
+	-  Obs: as strings devem ser envolvidas por aspas duplas.
+-  Booleanos: são os valores verdadeiro (true) ou falso (false);
+-  Arrays: são listas ordenadas de valores, ex: [1, 2, 3] ou ["Oi", "Ola", "Bom dia"];
+-  Objetos: são conjuntos de pares nome/valor -> {"nome": "João" } (Toda chave é uma string); 
+-  null: é um valor especial que representa a ausência de valor
+
+Conseguimos ver a presença de arquivos JSON em configurações do VSCode, por exemplo.
+
+> De Python para JSON, temos o seguinte
+
+|   Python    |  JSON  |
+| :---------: | :----: |
+|    dict     | object |
+| list, tuple | array  |
+|     str     | string |
+| int, float  | number |
+|    True     |  true  |
+|    False    | false  |
+|    None     |  null  |
+#### <span style="color:rgb(4, 255, 0)">Algumas funções da biblioteca JSON</span> 
+
+Como um arquivo JSON é um arquivo de texto, as funções que devemos executar é de escrita e leitura. Para isso, utilizamos duas funções da biblioteca JSON
+
+-  loads - que carrega o arquivo JSON e possibilita que a leitura, como também a alteração;
+-  dumps - essa é uma função que meio que "exporta" o arquivo para o tipo JSON.
+
+```Python
+import json  
+  
+# função que imprime "mais organizado"  
+from pprint import pprint  
+  
+string_json = """  
+    {    "title": "O Senhor dos Aneis: A Sociedade do Anel",    "original_title": "The Lord Of The Rings: The Fellowship of the Ring",    "is_movie": true,    "imdb_rating": 8.8,    "year": 2001,    "characters": ["Frodo", "Sam", "Gandalf", "Legolas", "Boromir"],    "budget": null    }  
+"""  
+  
+filme = json.loads(string_json)  
+  
+pprint(filme, width=40)  
+print(filme['title'])  
+print(filme['characters'][0])
+```
+
+O problema as vezes de usar dicionários que vieram de arquivos convertidos de JSON é que não sabemos as chaves que o dicionário contém. Para resolver isso usamos uma função especial *TypedDict* presente na biblioteca *typing*. 
+
+Criamos uma classe para representar o nosso dicionário e herdamos de TypedDict, após isso passamos as chaves do dicionário com seus determinados tipos.
+
+```Python
+class Movie(TypedDict):  
+    title: str  
+    original_title: str  
+    is_movie: bool  
+    imdb_rating: float  
+    year: int  
+    characters: list  
+    budget: None
+```
+
+![[Pasted image 20250602180431.png]]
+
+Utilizando o dumps para modificar ou transformar em arquivo JSON.
+
+
+
+
+
+
+
+
+
+
+
+
