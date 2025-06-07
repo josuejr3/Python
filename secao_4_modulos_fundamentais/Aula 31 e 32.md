@@ -32,3 +32,38 @@ def criar_arquivos(qtd: int, zip_dir: Path):
 criar_arquivos(3, CAMINHO_ZIP_DIR)
 ```
 
+-  Uma observação é que para que não vá todos os diretórios "pais" até a pasta que estamos tentando compactar dentro do arquivo zip, devemos passar o argumento de nome na função de zip utilizada.
+
+```Python
+with ZipFile(CAMINHO_COMPACTADO, 'w') as zip:  
+    for root, dirs, files in os.walk(CAMINHO_ZIP_DIR):  
+        for file in files:  
+            zip.write(os.path.join(root, file), file)
+```
+
+```Python
+# Criando zip e adicionando arquivos (compactando)  
+with ZipFile(CAMINHO_COMPACTADO, 'w') as zip:  
+    for root, dirs, files in os.walk(CAMINHO_ZIP_DIR):  
+        for file in files:  
+            zip.write(os.path.join(root, file), file)  
+  
+# Lendo arquivos de um zip  
+with ZipFile(CAMINHO_COMPACTADO, 'r') as zip:  
+    for arquivo in zip.namelist():  
+        print(arquivo)  
+  
+# Extraindo e desempacotando arquivos zip  
+with ZipFile(CAMINHO_COMPACTADO, 'r') as zip:  
+    zip.extractall(CAMINHO_DESCOMPACTADO)
+```
+
+
+
+
+
+
+
+
+
+
