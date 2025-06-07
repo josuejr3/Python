@@ -35,7 +35,7 @@ Devemos selecionar uma porta, por padrão a porta é a 8000, porém, pode ter al
 python -m http.server -d aula190_site/ 3333
 ```
 
-Portas comuns:
+<mark style="background: #BBFABBA6;">Portas</mark> comuns:
 
 - 8000
 - 3333
