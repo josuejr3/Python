@@ -45,11 +45,32 @@ chrome_browser = webdriver.Chrome(
 )
 
 
+# Para fazer seleção de "coisas" em uma página, devemos importar a classe "By"
+from selenium.webdriver.common.by import By
+# Fazer import para aguardar o elemento aparecer na tela
+from selenium.webdriver.support.wait import WebDriverWait
+# Importando condições esperadas
+from selenium.webdriver.support import expected_conditions as EC
+# Importando para utilizar botões do teclado
+from selenium.webdriver.common.keys import Keys
+
+
 if __name__ == '__main__':
 
-    TIME_TO_WAIT = 10
+    TIME_TO_WAIT = 60
     options = ()
 
+    # Abre o navegador na página do google
     chrome_browser.get('https://www.google.com')
+
+    # Espera para encontrar o input
+    search_input = WebDriverWait(chrome_browser, TIME_TO_WAIT).until(
+        EC.presence_of_element_located(
+            (By.NAME, 'q')
+        )
+    )
+    search_input.send_keys("C#")
+    time.sleep(10)
+    search_input.send_keys(Keys.ENTER)
     time.sleep(TIME_TO_WAIT)
 
