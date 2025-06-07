@@ -1,3 +1,4 @@
+#  type: ignore
 from pathlib import Path
 import time
 
@@ -43,6 +44,12 @@ chrome_browser = webdriver.Chrome(
     options=chrome_options,
 )
 
-chrome_browser.get("https://www.leagueofgraphs.com")
-time.sleep(30)
+
+if __name__ == '__main__':
+
+    TIME_TO_WAIT = 10
+    options = ()
+
+    chrome_browser.get('https://www.google.com')
+    time.sleep(TIME_TO_WAIT)
 
