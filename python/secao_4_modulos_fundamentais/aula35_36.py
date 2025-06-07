@@ -26,3 +26,4 @@ print(response.text)
 # Além disso, podemos tentar converter o conteúdo da pasta para json
 # print(response.json())
 
+# Tutotial / Aula requests: https://www.youtube.com/watch?v=Qd8JT0bnJGs
