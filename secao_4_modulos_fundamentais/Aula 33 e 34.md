@@ -5,6 +5,20 @@ Podemos usar o Python do ambiente virtual mesmo que ele não esteja ativado, iss
 
 Basicamente, basta ir diretmente ao Python que está na pasta venv ou env.
 
+```Python
+import sys  
+  
+# printa os argumentos que eu passei  
+# semelhante ao que temos na main do c/c++  
+  
+print(sys.argv)  
+  
+argumentos = sys.argv  
+qtd_argumentos = len(argumentos)  
+print(qtd_argumentos)
+```
+
+
 
 
 
