@@ -22,3 +22,63 @@ A mensagem de resposta do servidor deve incluir dados como:
 -  O código de status HTTP (200 success, 404 not found, 301 moved permanently)
 -  Os cabeçalhos HTTP (content-type, accept)
 -  O corpo da mensagem (pode estar em vazio em alguns casos).
+
+Executando o módulo http.server
+
+```cmd
+python -m http.server -d aula190_site/
+```
+
+Devemos selecionar uma porta, por padrão a porta é a 8000, porém, pode ter algo já rodando nessa porta. 
+
+```cmd
+python -m http.server -d aula190_site/ 3333
+```
+
+Portas comuns:
+
+- 8000
+- 3333
+- 8080
+- 3000
+- 3001
+- 3002
+
+![[Pasted image 20250607145111.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
