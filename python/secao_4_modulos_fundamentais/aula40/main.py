@@ -71,14 +71,10 @@ if __name__ == '__main__':
     )
     search_input.send_keys("Broken Home - Papa Roach")
     search_input.send_keys(Keys.ENTER)
-    time.sleep(TIME_TO_WAIT)
 
-    # Se eu tenho certeza que o elemento vai aparecer na tela eu posso usar
-    # os métodos abaixo
+    time.sleep(10)
 
-    resultados = chrome_browser.find_element(By.ID, 'dismissible')
-    print(resultados)
-
-
+    results = chrome_browser.find_element(By.ID, 'contents')
+    print(results)
 
 
