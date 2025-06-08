@@ -61,20 +61,21 @@ if __name__ == '__main__':
     options = ()
 
     # Abre o navegador na página do google
-    chrome_browser.get('https://www.youtube.com/')
+    chrome_browser.get('https://www.google.com.br/')
 
     # Espera para encontrar o input
     search_input = WebDriverWait(chrome_browser, TIME_TO_WAIT).until(
         EC.presence_of_element_located(
-            (By.NAME, 'search_query')
+            (By.NAME, 'q')
         )
     )
-    search_input.send_keys("Broken Home - Papa Roach")
+    search_input.send_keys("youtube")
     search_input.send_keys(Keys.ENTER)
 
     time.sleep(10)
 
-    results = chrome_browser.find_element(By.ID, 'contents')
-    print(results)
+    results = chrome_browser.find_element(By.ID, 'res')
+    links = results.find_elements(By.TAG_NAME, 'a')
+    links[0].click()
 
 
