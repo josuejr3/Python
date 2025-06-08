@@ -34,7 +34,30 @@ Além da trindade principal de argumentos, temos alguns outros que também valem
 
 Em relação ao retorno do comando run, teremos:
 
--  
+-  stdout, stderr, returncode (normalmente 0 se deu tudo certo) e args;
+-  A codificação de caracteres do Windows pode ser diferente. Vale a pena testar: cp1252, cp852, cp850 (ou outros). Linux e mac usam utf_8. 
+
+Testaremos esse módulo com o comando "ping". Esse comando consiste em enviar um sinal para algum IP e após isso ele meio que verifica se o sinal foi recebido corretamente.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
