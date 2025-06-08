@@ -60,4 +60,19 @@
 ---
  - Módulo de datetime, calendar e locale para tarefas que envolvem tempo e local;
  - Módulo so para interação direta com o sistema operacional;
+ - Um pouco mais sobre o módulo JSON, manipulação de caminhos, pastas e arquivos com pathlib;
+ - Manipulação de arquivos CSV com csv.reader e csv.writer;
+ - Módulos de geração de números pseudoaleátorios random e secrets;
+ - Variáveis de ambiente no Python e arquivos .env;
+ - Envio de e-mails com protocolo SMTP;
+ - Compactando e descompactando arquivos com ZipFile;
+ - Configurações de argumentos de programa com sys.argv e arg.parse;
+ - Introdução ao protocolo HTTP;
+ - Módulo Requests para obtenção de dados em sites estáticos (sem JavaScript);
+ - Web Scraping usando Requests e BeautifulSoup 4;
+ - Introdução e navegação utilizando Selenium com Chrome;
+ - Módulo Subprocess para execução de tarefas externas ao programa;
+ - Ferramenta Jupyter Notebooks para Ciência e Análise de dados;
+ - Introdução ao módulo Threads;
+ - Módulo PyPDF2 para manipulação de arquivos .PDF;
 
