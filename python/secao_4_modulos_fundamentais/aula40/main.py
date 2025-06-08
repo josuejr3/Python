@@ -57,20 +57,28 @@ from selenium.webdriver.common.keys import Keys
 
 if __name__ == '__main__':
 
-    TIME_TO_WAIT = 60
+    TIME_TO_WAIT = 300
     options = ()
 
     # Abre o navegador na página do google
-    chrome_browser.get('https://www.google.com')
+    chrome_browser.get('https://www.youtube.com/')
 
     # Espera para encontrar o input
     search_input = WebDriverWait(chrome_browser, TIME_TO_WAIT).until(
         EC.presence_of_element_located(
-            (By.NAME, 'q')
+            (By.NAME, 'search_query')
         )
     )
-    search_input.send_keys("C#")
-    time.sleep(10)
+    search_input.send_keys("Broken Home - Papa Roach")
     search_input.send_keys(Keys.ENTER)
     time.sleep(TIME_TO_WAIT)
+
+    # Se eu tenho certeza que o elemento vai aparecer na tela eu posso usar
+    # os métodos abaixo
+
+    resultados = chrome_browser.find_element(By.ID, 'dismissible')
+    print(resultados)
+
+
+
 
