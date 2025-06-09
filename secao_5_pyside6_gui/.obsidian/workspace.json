@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Aula 59.md",
+                "file": "Aula 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Aula 59"
+              "title": "Aula 1"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "332618a4b8fe8469",
@@ -172,6 +173,7 @@
   },
   "active": "a58d6396bce94731",
   "lastOpenFiles": [
+    "Aula 1.md",
     "Aula 59.md",
     "Aula 58.md",
     "Aula 55, 56 e 57.md",
@@ -198,7 +200,6 @@
     "Aula 14 e 15.md",
     "Aula 13.md",
     "Aula 11 e 12.md",
-    "Aula 9 e 10.md",
-    "Aula 8.md"
+    "Aula 9 e 10.md"
   ]
 }
