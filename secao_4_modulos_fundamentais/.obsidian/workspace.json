@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "79e130161dbcc528",
+        "id": "35699d7f17ec7498",
         "type": "tabs",
         "children": [
           {
-            "id": "ac6f46ef0089f41f",
+            "id": "a58d6396bce94731",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Aula 55.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Aula 55"
+              "title": "Nova aba"
             }
           }
         ]
@@ -78,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "332618a4b8fe8469",
@@ -171,9 +166,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ac6f46ef0089f41f",
+  "active": "a58d6396bce94731",
   "lastOpenFiles": [
-    "Aula 55.md",
+    "Aula 58.md",
+    "Aula 55, 56 e 57.md",
     "Aula 54.md",
     "Aula 51, 52 e 53.md",
     "Aula 48, 49 e 50.md",
@@ -199,7 +195,6 @@
     "Aula 11 e 12.md",
     "Aula 9 e 10.md",
     "Aula 8.md",
-    "Aula 7.md",
-    "Aula 4 e 5.md"
+    "Aula 7.md"
   ]
 }
