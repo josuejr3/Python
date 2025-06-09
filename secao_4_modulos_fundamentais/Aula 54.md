@@ -40,7 +40,24 @@ Para resolver o problema das filas, nós usamos o módulo collections com a estr
 
 ```Python
 from collections import deque
+
+fila_correta: deque[int] = deque()  
+fila_correta.append(3)  
+fila_correta.append(4)  
+fila_correta.append(5)  
+fila_correta.appendleft(0)  
+fila_correta.appendleft(1)  
+fila_correta.appendleft(2)  
+print(fila_correta)  
+fila_correta.pop()  
+fila_correta.popleft()  
+print(fila_correta)
 ```
+
+-  Links para saber mais
+
+	https://www.otaviomiranda.com.br/2020/pilhas-em-python-com-listas-stack/
+	https://youtu.be/svWVHEihyNI
 
 
 
