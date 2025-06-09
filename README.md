@@ -75,4 +75,9 @@
  - Ferramenta Jupyter Notebooks para Ciência e Análise de dados;
  - Introdução ao módulo Threads;
  - Módulo PyPDF2 para manipulação de arquivos .PDF;
+ - Introdução a estrutura Deque;
+ - Trabalhando com planilhas usando Openpyxl;
+ - Módulo Pillow para modificação de imagens.
 
+#### 5ª Seção - PySide6 e Aplicações com Interface Gráfica (GUI)
+---
