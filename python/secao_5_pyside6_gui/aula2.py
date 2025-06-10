@@ -8,7 +8,7 @@ app = QApplication()
 
 # Instancia o botão
 botao = QPushButton('Texto Botão')
-botao.setStyleSheet("font-size: 40px;")
+botao.setStyleSheet("font-size: 25px; color: #0000FF; font-weight: bold;")
 
 # botao2 = QPushButton('Texto Botão')
 # botao2.setStyleSheet("font-size: 40px;")
