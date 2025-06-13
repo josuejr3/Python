@@ -19,7 +19,7 @@ central_widget.setLayout(layout)
 # Adicionando o botao ao layout
 layout.addWidget(botao, 1, 1, 1, 1)
 layout.addWidget(botao2, 1, 2, 1, 1)
-layout.addWidget(botao3, 1, 1, 3, 1)
+layout.addWidget(botao3, 3, 1, 1, 2)
 
 # Mostre na janela
 central_widget.show()
