@@ -12,7 +12,7 @@ class Buttons(QPushButton):
         font = self.font()
         font.setPixelSize(MEDIUM_FONT_SIZE)
         # Não foi usado o setStyleSheet para não sobreescrever o estilo dark
-        font.setBold(True)
+        # font.setBold(True)
         self.setFont(font)
         self.setMinimumSize(45, 45)
         #self.setProperty('cssClass', "specialButton")

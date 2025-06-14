@@ -1,5 +1,6 @@
 from PySide6.QtWidgets import QGridLayout
 from Buttons import Buttons
+from utils import isNumOrDot, isEmpty
 
 class ButtonsGrid(QGridLayout):
     def __init__(self, *args, **kwargs) -> None:
@@ -20,7 +21,7 @@ class ButtonsGrid(QGridLayout):
             for j, buttonText in enumerate(row):
                 button = Buttons(buttonText)
 
-                if buttonText not in '0123456789.':
+                if not isNumOrDot(buttonText) and not isEmpty(buttonText):
                     button.setProperty('cssClass', "specialButton")
                     #button.style().unpolish(button)
                     #button.style().polish(button)
