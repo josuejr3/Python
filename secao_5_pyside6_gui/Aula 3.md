@@ -36,8 +36,8 @@ app.exec()
 
 Dessa forma temos a seguinte hierarquia de classes
 
--  QApplication (app)
-	-  CentralWidget (central_widget)
+-  QApplication (app) - gerencia o app
+	-  CentralWidget (central_widget) 
 		-  Layout (layout)
 			-  Widgets no geral (botao1)
 			-  Widgets (botao2)
