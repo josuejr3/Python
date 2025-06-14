@@ -10,27 +10,22 @@ class MainWindow(QMainWindow):
         # Configuração Layout básico
 
         # Definindo o Widget central
-        self.central_widget = QWidget()
-
+        self.centerWidget = QWidget()
         # Definindo o layout do Widget central
-        self.layout_to_central_widget = QVBoxLayout()
-
+        self.layoutToCenterWidget = QVBoxLayout()
         # Aplicando o layout no Widget Central
-        self.central_widget.setLayout(self.layout_to_central_widget)
-
+        self.centerWidget.setLayout(self.layoutToCenterWidget)
         # Aplicando o Widget Central a minha Window
-        self.setCentralWidget(self.central_widget)
-
+        self.setCentralWidget(self.centerWidget)
         # Alterando o nome da janela principal
-        self.setWindowTitle("Calculator")
-
+        self.setWindowTitle("Calculadora")
         # Criando o ícone e alterando na janela
-        self.icon = QIcon(str(WINDOW_ICON_PATH))
-        self.setWindowIcon(self.icon)
+        self.iconWindow = QIcon(str(WINDOW_ICON_PATH))
+        self.setWindowIcon(self.iconWindow)
 
     def addWidgetToVLayout(self, widget: QWidget) -> None:
-        self.layout_to_central_widget.addWidget(widget)
-        # self.adjustFixedSize()
+        self.layoutToCenterWidget.addWidget(widget)
+        #self.adjustFixedSize()
 
     def adjustFixedSize(self) -> None:
         # Última coisa a ser feita
