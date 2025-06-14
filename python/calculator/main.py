@@ -27,10 +27,22 @@ if __name__ == '__main__':
 
     # Grid
     buttonsGrid = ButtonsGrid()
+    # adicionando um layout dentro de outro layout
+    window.layoutToCenterWidget.addLayout(buttonsGrid)
 
-    # botao
-    botaoo = Buttons("RESULTADO")
-    window.addWidgetToVLayout(botaoo)
+    # Posicoes de linha e coluna e posicoes de expansao
+    # buttonsGrid.addWidget(Buttons('1'), 0, 1, 1, 1)
+    # buttonsGrid.addWidget(Buttons('2'), 0, 2, 1, 1)
+    # buttonsGrid.addWidget(Buttons('3'), 0, 3, 1, 1)
+    # buttonsGrid.addWidget(Buttons('4'), 1, 1, 1, 1)
+    # buttonsGrid.addWidget(Buttons('5'), 1, 2, 1, 1)
+    # buttonsGrid.addWidget(Buttons('6'), 1, 3, 1, 1)
+    # buttonsGrid.addWidget(Buttons('7'), 2, 1, 1, 1)
+    # buttonsGrid.addWidget(Buttons('8'), 2, 2, 1, 1)
+    # buttonsGrid.addWidget(Buttons('9'), 2, 3, 1, 1)
+    # buttonsGrid.addWidget(Buttons('0'), 3, 1, 1, 3)
 
+
+    window.adjustFixedSize()
     window.show()
     app.exec()

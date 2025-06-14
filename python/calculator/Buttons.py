@@ -15,4 +15,4 @@ class Buttons(QPushButton):
         font.setBold(True)
         self.setFont(font)
         self.setMinimumSize(45, 45)
-        self.setProperty('cssClass', "specialButton")
+        #self.setProperty('cssClass', "specialButton")
