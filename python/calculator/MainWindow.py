@@ -23,6 +23,7 @@ class MainWindow(QMainWindow):
         self.iconWindow = QIcon(str(WINDOW_ICON_PATH))
         self.setWindowIcon(self.iconWindow)
 
+
     def addWidgetToVLayout(self, widget: QWidget) -> None:
         self.layoutToCenterWidget.addWidget(widget)
         #self.adjustFixedSize()

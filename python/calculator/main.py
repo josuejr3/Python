@@ -26,7 +26,8 @@ if __name__ == '__main__':
     window.addWidgetToVLayout(display)
 
     # Grid
-    buttonsGrid = ButtonsGrid()
+    buttonsGrid = ButtonsGrid(display=display, info=info)
+    # window.addWidgetToVLayout(buttonsGrid)
     # adicionando um layout dentro de outro layout
     window.layoutToCenterWidget.addLayout(buttonsGrid)
 
