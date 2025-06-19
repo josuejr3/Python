@@ -1,5 +1,10 @@
 import sys
 
+
+### corrigir bug (pressiona numero) depois fica pressionando botao de = varias vezes
+
+
+
 from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QVBoxLayout, QLabel
 from Info import Info
@@ -18,7 +23,7 @@ if __name__ == '__main__':
     window = MainWindow()
 
     # Info
-    info = Info("2+2=4")
+    info = Info()
 
     # Display
     display = Display()
@@ -26,7 +31,7 @@ if __name__ == '__main__':
     window.addWidgetToVLayout(display)
 
     # Grid
-    buttonsGrid = ButtonsGrid(display=display, info=info)
+    buttonsGrid = ButtonsGrid(display=display, info=info, window=window)
     # window.addWidgetToVLayout(buttonsGrid)
     # adicionando um layout dentro de outro layout
     window.layoutToCenterWidget.addLayout(buttonsGrid)

@@ -17,4 +17,11 @@ def isValidNumber(string: str) -> bool:
 def isEmpty(string: str):
     return string == ''
 
+def convertToNumber(newNumber: str) -> int:
+    newNumber = float(newNumber)
+
+    if newNumber.is_integer():
+        newNumber = int(newNumber)
+
+    return newNumber
 
