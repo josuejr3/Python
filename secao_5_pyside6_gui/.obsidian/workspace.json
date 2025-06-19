@@ -74,7 +74,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "332618a4b8fe8469",
@@ -166,7 +167,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a4a9b9e89c10789c",
+  "active": "837445c8281f89db",
   "lastOpenFiles": [
     "Aula 7.md",
     "Aula 6.md",
