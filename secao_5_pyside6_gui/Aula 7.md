@@ -10,3 +10,7 @@ O PyInstaller serve basicamente para fazer uma compactação em nosso programa e
 <span style="color:rgb(4, 255, 0)">Links Importantes</span> 
 
 -  https://pyinstaller.org/en/stable
+
+```cmd
+pyinstaller --name="Calculadora" --noconfirm --onefile --add-data="diretorio_pasta_files" --icon="diretorio_do_icone" --noconsole --clean --log-level=WARN calculator/main.py
+```

@@ -1,3 +1,4 @@
+from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QPushButton
 
 from calculator.constants import MEDIUM_FONT_SIZE
@@ -14,7 +15,7 @@ class Buttons(QPushButton):
         font = self.font()
         font.setPixelSize(MEDIUM_FONT_SIZE)
         # Não foi usado o setStyleSheet para não sobreescrever o estilo dark
-        # font.setBold(True)
+        font.setBold(True)
         self.setFont(font)
         self.setMinimumSize(1, 60)
         #self.setProperty('cssClass', "specialButton")
