@@ -81,3 +81,8 @@
 
 #### 5ª Seção - PySide6 e Aplicações com Interface Gráfica (GUI)
 ---
+ - Calculadora - (Projeto)
+
+#### 6ª Seção - Bases de Dados Relacionais com Python usando SQL/MySQL
+---
+
