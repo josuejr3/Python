@@ -20,18 +20,6 @@
               "icon": "lucide-file",
               "title": "Aula 5"
             }
-          },
-          {
-            "id": "4c0627f929bfa662",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Information Schema.png"
-              },
-              "icon": "lucide-image",
-              "title": "Information Schema"
-            }
           }
         ]
       }
