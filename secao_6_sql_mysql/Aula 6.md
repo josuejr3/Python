@@ -4,3 +4,6 @@
 Basicamente o DML é uma forma de manipular os dados em uma base de dados out tabela.
 
 ![[Opções DML.png]]
+
+DDL nós já vimos antes que é basicamente a definição dos tipos do dados.
+
