@@ -7,3 +7,10 @@ Basicamente o DML é uma forma de manipular os dados em uma base de dados out ta
 
 DDL nós já vimos antes que é basicamente a definição dos tipos do dados.
 
+-  Como o trabalho do desenvolvedor não é gerar uma base de dados, mas sim utilizar o que há de dados nela, usaremos o seguinte.
+
+	-  SELECT
+	-  INSERT
+	-  UPDATE
+	-  DELETE
+
