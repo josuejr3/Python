@@ -30,5 +30,23 @@ ON u.id = p.user_id;
 ```
 
 ```SQL
+SELECT u.id AS uid, p.id AS pid, p.bio, u.first_name FROM users AS u INNER JOIN profiles p ON uid = p.user_id WHERE u.first_name LIKE "%a" ORDER BY u.first_name DESC LIMIT 5;
+```
 
+> ~={green}Exemplo - Consultas com LEFT JOIN=~
+
+Nesse caso, usando o LEFT JOIN teremos todos os valores presentes na tabela à esquerda que é de a de users, independente se eles possuem profiles atrelados ou não. Usuarios que não tem perfil atrelado tem seus valores representados por "NULL".
+
+```SQL
+SELECT u.id AS uid, p.id AS pid, p.bio, u.first_name FROM users AS u LEFT JOIN profiles p
+ON u.id = p.user_id;
+```
+
+> ~={green}Exemplo - Consultas com RIGHT JOIN=~
+
+Inicialmente para o exemplo que estamos usando não é possível realizar o procedimento de RIGHT JOIN, pois a foreign key da tabela profiles está na tabela users. Para resolver isso <mark style="background: #FF5582A6;">TEMPORARIAMENTE</mark> podemos excluir a foreign key.
+
+```SQL
+SELECT u.id AS uid, p.id AS pid, p.bio, u.first_name FROM users AS u LEFT JOIN profiles p
+ON u.id = p.user_id;
 ```
