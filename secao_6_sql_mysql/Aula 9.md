@@ -71,15 +71,54 @@ ORDER BY id ASC, first_name DESC;
 -  ASC - Ascendente
 -  DESC - Descendente
 
+##### <span style="color:rgb(4, 255, 0)">SELECT com LIMIT</span>
 
+O SELECT com LIMIT nada mais é do que uma filtragem da quantidade de dados que vai aparecer na seleção final. 
 
+Supondo que uma busca retorne um total de 100 linhas de dados. Se utilizarmos a palavra dedicad LIMIT e um valor inferior a 100 significa que o retorno de linhas de dados vai ser apenas com a mesma quantidade que indicamos
 
+> ~={green}Exemplo=~
 
+-  Resultado - o padrão retorna 100 linhas de dados.
 
+```SQL
+SELECT id, first_name, email AS uemail FROM users WHERE id BETWEEN 100 and 150 ORDER BY first_name DESC LIMIT 5
+```
 
+O código acima vai selecionar as colunas id, first_name e e-mail da tabela usuários onde o id está entre 100 e 150 e vai ordenar pelo primeiro nome de forma decrescente. Supondo que o total de resultados seja de 100, ele só retornará os 5 primeiros, pois foi o que indicamos quando usamos o número 5 junto da palavra chave LIMIT.
 
+##### <span style="color:rgb(4, 255, 0)"> SELECT OFFSET</span>
 
+O SELECT OFFSET é uma outra forma que podemos limitar os dados. Basicamente ele limita o que estamos visualizando, por padrão o OFFSET é 0.
 
+> ~={green}Exemplo=~
+
+Se estivermos trabalhando com o limite de duas linhas de dados então teremos o seguinte.
+
+	linha0 - ...
+	linha1 - ...
+
+O OFFSET mostrará essas duas linhas. Para enxergarmos novos valores o nosso OFFSET deverá ser de 2, pois ele vai deslocar do meu "linha0" em duas posições, ficando o seguinte:
+
+	linha0 - ...
+	linha1 - ...
+	>>> deslocou <<<
+	linha2 - ...
+	linha3 - ...
+
+O OFFSET é como se fosse um passo de 2 em 2, 3 em 3 e assim por diante...
+
+```SQL
+SELECT id, first_name, email AND uemail, FROM users WHERE id BETWEEN 100 AND 150 ORDER BY id ASC LIMIT 3 OFFSET 3;
+```
+
+Outra maneira de escrever é o seguinte
+
+```SQL
+SELECT id, first_name, email AND uemail, FROM users WHERE id BETWEEN 100 AND 150 ORDER BY id ASC LIMIT 3, 6;
+```
+
+A diferença é que nessa situação, primeiro temos o OFFSET (3) e depois o LIMIT (6).
 
 
 
