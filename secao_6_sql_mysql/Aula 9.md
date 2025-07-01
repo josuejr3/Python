@@ -119,7 +119,26 @@ SELECT id, first_name, email AND uemail, FROM users WHERE id BETWEEN 100 AND 150
 ```
 
 A diferença é que nessa situação, primeiro temos o OFFSET (3) e depois o LIMIT (6).
+##### <span style="color:rgb(4, 255, 0)">INSERT com SELECT</span>
 
+O uso do INSERT junto com o SELECT é importante quando queremos inserir dados de uma tabela em outra.
+
+> ~={green}Exemplo - Inserindo dados na tabela Profiles=~
+
+```SQL
+INSERT INTO profiles (bio, description, user_id) SELECT "bio", "description", id FROM users;
+```
+
+-  O que está entre parentêses são as informações que desejamos;
+-  O código faz como se fosse um "for" na tabela e vai atribuir "bio" e "description" das linhas de users em novas linhas de profiles.
+
+Agora vamos ver como fazer uma concatenação de valores com textos
+
+```SQL
+INSERT INTO profiles (bio, description, user_id) SELECT CONCAT("Bio de ", first_name), first_name, id FROM users;
+```
+
+-  Usamos a função CONCAT do MySQL.
 
 
 
