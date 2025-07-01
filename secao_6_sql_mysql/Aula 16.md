@@ -1,0 +1,15 @@
+
+#### <span style="color:rgb(4, 255, 0)">GROUP BY</span>
+
+Em SQL o GROUP BY basicamente é uma forma de organizar  e agrupar os registros a partir de algum critério. No exemplo que estamos usando para estudos essa organização por se dar por exemplo através de usuários que possuem o mesmo primeiro nome em comum.
+
+```SQL
+SELECT id, first_name FROM users
+GROUP BY first_name
+ORDER BY first_name ASC;
+```
+
+Obs: quando usamos GROUP BY os registros devem ser agregáveis, isto é, não podemos agregar registros que possuem valores diferentes. Isso ocorre por exemplo quando temos usuários com nomes iguais, mas id diferentes.
+
+	Uma solução para isso é remover da primeira linha que contém o SELECT O "id", pois ele está 
+
