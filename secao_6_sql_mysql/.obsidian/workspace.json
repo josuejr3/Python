@@ -4,53 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "893240d09906cdf3",
+        "id": "dd2e29b7664ee37d",
         "type": "tabs",
         "children": [
           {
-            "id": "84e16c8953ffec5a",
+            "id": "9b15eb4e7ead74c3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Aula 6.md",
+                "file": "Aula 9.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Aula 6"
-            }
-          },
-          {
-            "id": "074c04549a905148",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Aula 7.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Aula 7"
-            }
-          },
-          {
-            "id": "a6a2036142f57cfe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Aula 8.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Aula 8"
+              "title": "Aula 9"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -200,10 +171,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a6a2036142f57cfe",
+  "active": "9b15eb4e7ead74c3",
   "lastOpenFiles": [
-    "Aula 7.md",
+    "Aula 9.md",
     "Aula 8.md",
+    "Aula 7.md",
     "Aula 6.md",
     "Opções DML.png",
     "Aula 5.md",
