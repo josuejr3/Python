@@ -4,38 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "dd2e29b7664ee37d",
+        "id": "a74990feaa74d354",
         "type": "tabs",
         "children": [
           {
-            "id": "9b15eb4e7ead74c3",
+            "id": "553271736eff7d54",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Aula 9.md",
+                "file": "Aula 11.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Aula 9"
+              "title": "Aula 11"
             }
           },
           {
-            "id": "b7b309080bfe1cad",
+            "id": "e26b2140d4b3ced1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Aula 10.md",
+                "file": "Aula 12.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Aula 10"
+              "title": "Aula 12"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -185,8 +186,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9b15eb4e7ead74c3",
+  "active": "e26b2140d4b3ced1",
   "lastOpenFiles": [
+    "Aula 11.md",
+    "Aula 12.md",
     "Aula 10.md",
     "Aula 9.md",
     "Aula 8.md",
@@ -221,8 +224,6 @@
     "Pasted image 20250607145111.png",
     "Aula 33 e 34.md",
     "Aula 31 e 32.md",
-    "Aula 29 e 30.md",
-    "Aula 27 e 28.md",
     "Pasted image 20250602180431.png"
   ]
 }
