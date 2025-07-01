@@ -47,3 +47,9 @@ Fazendo a inserção
 INSERT INTO users_roles (user_id, role_id) SELECT id, (SELECT id, FROM roles ORDER BY RAND() LIMIT 1) AS qualquer FROM users;
 ```
 
+<mark style="background: #FF5582A6;">Obs: o comando INSERT IGNORE acrescenta os valores e ignora os erros caso apareçam.</mark>
+
+```SQL
+insert ignore into user_roles (user_id, role_id) select id, (select id from roles order by rand() limit 1) as qualquer from users order by rand() limit 20;
+```
+
