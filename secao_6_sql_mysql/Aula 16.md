@@ -27,3 +27,14 @@ GROUP BY first_name
 -- ORDER BY first_name ASC;
 ORDER BY total DESC;
 ```
+
+```SQL
+SELECT u.first_name, COUNT(u.id) AS total FROM  users u
+LEFT JOIN profiles AS p
+ON p.user_id = u.id
+WHERE u.id IN (617, 539, 537, 611)
+GROUP BY first_name
+ORDER BY total DESC
+LIMIT 5;
+```
+
