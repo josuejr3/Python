@@ -83,6 +83,6 @@
 ---
  - Calculadora - (Projeto)
 
-#### 6ª Seção - Bases de Dados Relacionais com Python usando SQL/MySQL
+#### 6ª Seção - Bases de Dados Relacionais usando MySQL
 ---
 
