@@ -39,7 +39,3 @@ SELECT COUNT(salary) AS count_salary FROM users;
 
 
 
-
-
-
-
