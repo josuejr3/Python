@@ -11,7 +11,8 @@ connection = pymysql.connect(
     user='usuario',
     password='senha',
     database='base_de_dados',
-    charset="utf8mb4"
+    charset="utf8mb4",
+    cursorclass=pymysql.cursors.DictCursor, # Escolhe o cursor que retorna dicionario
 )
 
 TABLE_NAME = "customers"
@@ -109,3 +110,42 @@ with connection:
 
     # Em SELECTs não há necessidade de commit
 
+    # Utilizando o DELETE - PRECISA DE COMMIT POIS PODE FAZER UM ROLLBACK!!!
+    with connection.cursor() as cursor:
+        # sql = (
+        #     f"DELETE FROM {TABLE_NAME} "
+        # )
+
+        sql = (
+            f"DELETE FROM {TABLE_NAME} WHERE id = 4 "
+        )
+        cursor.execute(sql)
+        connection.commit()
+
+    # Usando o UPDATE
+        # ERRADO!!! TODOS OS NOMES NA TABELA VAO SER LUIZ
+        sql = (
+            f"UPDATE {TABLE_NAME} SET nome = 'LUIZ' "
+        )
+
+        sql2 = (
+            f"UPDATE {TABLE_NAME} SET nome = %s WHERE id = %s "
+        )
+
+        cursor.execute(sql2, ('Jax', 1))
+        # Sem o commit no delete, ele não apaga
+        # Sempre que fizer uma mudança na tabela é importante commitar
+        # É importante usar o WHERE no DELETE e no UPDATE
+        connection.commit()
+
+        cursor.execute(f"SELECT * FROM {TABLE_NAME} ")
+        # data_1 = cursor.fetchall()
+
+        # metodo scroll para rolar
+        cursor.scroll(-1) # volta uma linha
+        # SSCursor é um cursor que nao salva dados na memoria
+        # Podemos usar o SSDictCursor - (retorna um generator)
+
+        # Usando o cursor como dicionário
+        for row in cursor.fetchall():
+            print(row['nome'])
