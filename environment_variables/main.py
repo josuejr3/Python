@@ -1,5 +1,11 @@
-from os import environ
+from os import environ, getenv
 
+# getenv identifica se a variavel de ambiente existe
+# se sim, ela retorna true
 
-for v in environ:
-    print(environ['PYCHARM'])
+print(getenv('SPLASH'))
+print(getenv('XPTO'), 'fritas')
+getenv()
+
+environ['SPLASH'] = 'AAAAAA'
+print(getenv('SPLASH'))

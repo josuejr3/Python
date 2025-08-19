@@ -27,3 +27,19 @@ De maneira geral, uma aplicação depende de três fatores:
 
 As variáveis de ambiente que criamos no nosso sistema ou que modificamos são validas apenas no nosso sistema.
 
+-  Podemos usar o getenv para verificar se uma variável de ambiente existe;
+-  Ou também podemos usar o environ
+
+```Python
+from os import environ, getenv  
+  
+# getenv identifica se a variavel de ambiente existe  
+# se sim, ela retorna  
+  
+print(getenv('SPLASH'))  
+print(getenv('XPTO'), 'fritas')  
+getenv()
+```
+
+
+
