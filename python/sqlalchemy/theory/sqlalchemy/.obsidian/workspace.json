@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Core.md",
+                "file": "ORM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Core"
+              "title": "ORM"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5,
-    "collapsed": true
+    "width": 269.5
   },
   "right": {
     "id": "6521b9d9ed28bf1c",
@@ -170,9 +169,10 @@
   },
   "active": "990a812231a80fb6",
   "lastOpenFiles": [
+    "Pasted image 20250819141046.png",
+    "Core.md",
     "Images/SchemasTypes.png",
     "Images/Assincrona.png",
-    "Core.md",
     "Images/Core.png",
     "Images",
     "Introdução.md",

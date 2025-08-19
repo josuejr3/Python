@@ -4,3 +4,11 @@ O ORM é o mapeamento de objetos (classes) Python com os dados do nosso banco de
 <mark style="background: #ABF7F7A6;">Obs</mark>
 
 	O SQLAlchemy NÃO é um ORM ele TEM um ORM.
+
+-  Object - um objeto python, como uma classe que construímos;
+-  Relational - relacional é em relação aos bancos relacionais;
+-  Mapper - quer dizer que é feito um mapeamento entre os metadados das tabelas em uma classe e cada row é relacionada a uma instância.
+
+<div align="center"><img src=""/></div>
+
+![[Pasted image 20250819141046.png]]

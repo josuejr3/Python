@@ -69,6 +69,41 @@ Os metadados das tabelas podem ser descritos por Schemas e seus determinados Tip
 
 Em resumo, os metadados precisam saber quais são os tipos que eles são, por exemplo, id é um inteiro e comment é uma string.
 
+---
+##### SQL Expression Language
+
+Até esse momento, todas as operações que fizemos com o banco, fizemos com a função text() e escrevemos o SQL na mão.
+
+O Core tem um grupo de funções e objetos que podem nos ajudar a montar SQL:
+
+-  DQL - Data Query Language - Forma de criar buscas no SQLAlchemy (SELECTS)
+-  DML - Data Manipulation Language - Forma de manipulação (UPDATE, INSERT, DELETE)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
