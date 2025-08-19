@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ORM.md",
+                "file": "Alguns Pontos Adicionais.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ORM"
+              "title": "Alguns Pontos Adicionais"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5
+    "width": 269.5,
+    "collapsed": true
   },
   "right": {
     "id": "6521b9d9ed28bf1c",
@@ -169,7 +170,8 @@
   },
   "active": "990a812231a80fb6",
   "lastOpenFiles": [
-    "Pasted image 20250819141046.png",
+    "ORM.md",
+    "Images/ORM.png",
     "Core.md",
     "Images/SchemasTypes.png",
     "Images/Assincrona.png",
@@ -177,7 +179,6 @@
     "Images",
     "Introdução.md",
     "SQLAlchemy.md",
-    "ORM.md",
     "Alguns Pontos Adicionais.md",
     "Seção 4 - Bibliotecas Fundamentais",
     "Referencias.md",

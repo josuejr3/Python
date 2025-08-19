@@ -9,6 +9,28 @@ O ORM é o mapeamento de objetos (classes) Python com os dados do nosso banco de
 -  Relational - relacional é em relação aos bancos relacionais;
 -  Mapper - quer dizer que é feito um mapeamento entre os metadados das tabelas em uma classe e cada row é relacionada a uma instância.
 
-<div align="center"><img src=""/></div>
+<div align="center"><img src="ORM.png"/></div>
 
-![[Pasted image 20250819141046.png]]
+##### Session
+
+ A session entra como uma ferramenta que faz a junção do registry ou da classe base junto com a engine, possibilitando assim usarmos as ferramentas de SQL.
+
+Além disso, a session cria um cache dos objetos em memória.
+
+A session faz o papel da "connection" do core, mas retorna objetos do ORM na query
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
