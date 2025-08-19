@@ -33,9 +33,9 @@
   },
   "Excalidraw": "LiExcalidrawIcon",
   "Seção 3 - Programação Orientada à Objetos": "LiComputer",
-  "Introdução.md": "LiComputer",
-  "ORM.md": "LiComputer",
-  "SQLAlchemy.md": "LiComputer",
-  "Core.md": "LiComputer",
-  "Alguns Pontos Adicionais.md": "LiComputer"
+  "SQLAlchemy/Alguns Pontos Adicionais.md": "LiComputer",
+  "SQLAlchemy/Core.md": "LiComputer",
+  "SQLAlchemy/Introdução.md": "LiComputer",
+  "SQLAlchemy/ORM.md": "LiComputer",
+  "SQLAlchemy/SQLAlchemy.md": "LiComputer"
 }
