@@ -17,5 +17,4 @@ print(con.connection.dbapi_connection)  # vê o conector
 
 # - A: atomico / atomicidade
 
-
 con.close()

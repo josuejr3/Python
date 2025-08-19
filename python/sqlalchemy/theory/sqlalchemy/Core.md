@@ -37,4 +37,64 @@ As transações são "8 ou 80", ou dão 100% certo ou ela não dá certo. **Não
 
 -  Exemplo
 
-Transação de um valor de um usuário em um banco para outro, se o valor é transferido do user A para o user B, o valor sai de A, mas não chega em B então é feito o *rollback* e o valor é devolvido para A, a transaçã
+Transação de um valor de um usuário em um banco para outro, se o valor é transferido do user A para o user B, o valor sai de A, mas não chega em B então é feito o *rollback* e o valor é devolvido para A, a transação não foi completada.
+
+> Caso queira assíncrona
+
+<div align="center">
+  <img src="Assincrona.png"/>
+</div>
+
+---
+
+Após fazer um execute no SQLAlchemy ele retorna um objeto especial chamado de Result, ele implementa diversos métodos, além de ser um iterável.
+
+> Exemplo de alguns métodos
+
+- fetchone() - pega o primeiro;
+- fetchmany(3) / .partitions(3) - pega alguns valores;
+- fetchall() / .all() - pega todos os valores;
+- .first() - pega 1, mas não dá erro se não conseguir.
+
+---
+##### Schemas/Types
+
+Os metadados das tabelas podem ser descritos por Schemas e seus determinados Tipos
+
+<div align="center"><img src="SchemasTypes.png"/></div>
+
+-  Linha da tabela são os dados;
+-  Metadados - nome da tabela, id, nome, commet, live... são os metados (são dados sobre dados).
+-  Cada coluna tem um metadado associado, porém o tipo ainda seria string
+
+Em resumo, os metadados precisam saber quais são os tipos que eles são, por exemplo, id é um inteiro e comment é uma string.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
