@@ -5,7 +5,11 @@ from os import environ, getenv
 
 print(getenv('SPLASH'))
 print(getenv('XPTO'), 'fritas')
-getenv()
 
 environ['SPLASH'] = 'AAAAAA'
 print(getenv('SPLASH'))
+
+from dotenv import load_dotenv
+load_dotenv(".env")
+
+print(getenv('POKE_API'))

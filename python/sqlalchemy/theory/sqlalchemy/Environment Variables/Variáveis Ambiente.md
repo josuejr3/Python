@@ -41,5 +41,13 @@ print(getenv('XPTO'), 'fritas')
 getenv()
 ```
 
+---
 
+Para facilitar o carregamento das variáveis de ambiente nós podemos fazer isso em um único arquivo.
 
+O nome de arquivo de configuração de ambiente é *".env"*
+
+> Para ler esse tipo de arquivo, usamos a biblioteca python-dotenv
+
+-  load_dotenv()
+-  dotenv_values()
