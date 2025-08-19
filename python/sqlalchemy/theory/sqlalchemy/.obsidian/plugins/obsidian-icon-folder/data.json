@@ -32,5 +32,10 @@
     "useInternalPlugins": false
   },
   "Excalidraw": "LiExcalidrawIcon",
-  "Seção 3 - Programação Orientada à Objetos": "LiComputer"
+  "Seção 3 - Programação Orientada à Objetos": "LiComputer",
+  "Introdução.md": "LiComputer",
+  "ORM.md": "LiComputer",
+  "SQLAlchemy.md": "LiComputer",
+  "Core.md": "LiComputer",
+  "Alguns Pontos Adicionais.md": "LiComputer"
 }
