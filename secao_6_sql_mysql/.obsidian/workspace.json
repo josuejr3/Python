@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Aula 17.md",
+                "file": "Aula 10.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Aula 17"
+              "title": "Aula 10"
             }
           }
         ]
@@ -160,6 +160,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Criar nova base": false,
       "switcher:Abrir a troca rápida": false,
       "graph:Abrir visualização em gráfico": false,
       "canvas:Criar novo canvas": false,
@@ -172,8 +173,17 @@
   },
   "active": "9e441f5217728f39",
   "lastOpenFiles": [
-    "Aula 16.md",
+    "Aula 9.md",
+    "Aula 8.md",
+    "Aula 6.md",
+    "Aula 7.md",
+    "Aula 5.md",
+    "Aula 4.md",
+    "Aula 2.md",
+    "Aula 3.md",
+    "Aula 1.md",
     "Aula 17.md",
+    "Aula 16.md",
     "Aula 15.md",
     "Aula 14.md",
     "Aula 13.md",
@@ -181,23 +191,14 @@
     "Relacionamentos.png",
     "Aula 11.md",
     "Aula 10.md",
-    "Aula 9.md",
-    "Aula 8.md",
-    "Aula 7.md",
-    "Aula 6.md",
     "Opções DML.png",
-    "Aula 5.md",
     "Pasted image 20250629142539.png",
-    "Aula 4.md",
     "Information Schema.png",
     "Exemplo updated_at.png",
     "Exemplo created_at.png",
-    "Aula 3.md",
     "Pasted image 20250620212556.png",
     "Pasted image 20250620154927.png",
     "Pasted image 20250620154822.png",
-    "Aula 2.md",
-    "Aula 1.md",
     "Excalidraw/Drawing 2025-06-20 15.47.15.excalidraw.md",
     "Excalidraw",
     "Aula 59.md",
