@@ -9,5 +9,5 @@ def my_view(request):
     print("Oie")
     return render(
         request,
-        'blog.html',
+        'global/index.html',
     )

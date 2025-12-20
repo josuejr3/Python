@@ -47,4 +47,44 @@ Se tivermos dois templates html com o mesmo nome o django pode pegar qualquer um
 blog/templates/blog/index_blog.html
 ```
 
+```python
+def my_view(request):  
+    
+    return render(  
+        request,  
+        'home/index.html',  
+    )
+```
+
+Obs: nas configs do django em templates vai ter um campo especial chamado "dirs" e nele podemos colocar diretórios em que queremos procurar templates.
+
+Conseguimos criar um "super template" e com ele "herdar" o restante
+
+```html
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>TESTANDO A BASE</title>  
+</head>  
+<body>  
+<H1>{% block texto %} BASE {% endblock texto %}</H1>  
+</body>  
+</html>
+```
+
+Observe o campo, em H1 ele é genérico
+
+```django
+{% extends 'global/index.html' %}  
+{% block texto %} TESTANDO HOME {% endblock texto %}
+```
+
+Modificando o bloco.
+
+Essa sintaxe "{ % block % }" significa que você está executando algum comando. Há outra sintaxe que é { { X } } para printar o valor que está dentro, no caso, o X.
+
+##### <span style="color:rgb(4, 255, 0)">Partials</span> 
+
+Partials são partes do meu html que eu posso selecionar e separar, por exemplo eu posso ter uma parte que contém somente o cabeçalho.
 
