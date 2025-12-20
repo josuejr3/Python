@@ -88,3 +88,11 @@ Essa sintaxe "{ % block % }" significa que você está executando algum comando.
 
 Partials são partes do meu html que eu posso selecionar e separar, por exemplo eu posso ter uma parte que contém somente o cabeçalho.
 
+-  Esse tipo de técnica é usado para que outras páginas possam aproveitar essas partes
+
+```django
+{% include 'global/partials/head.html' %}
+		<h1>{% block texto %}{% endblock texto %}</h1>
+	</body>
+</html>
+```
