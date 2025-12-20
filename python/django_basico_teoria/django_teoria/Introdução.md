@@ -84,9 +84,12 @@ Por exemplo, dentro do app blog eu ter: comments, categories, authors... fica mu
 Para aninhar URLs eu insiro no arquivo urls.py a função "include" e dentro dela eu passo o caminho da url que eu quero
 
 ```python
+from django.contrib import admin
+from django.urls import include, path
+
 urlpatterns = [
 	path("", include("home.urls")),
 	path("blog/", blog_views.blog),
-	path
+	path("admin/", admin.site.urls),
 ]
 ```
