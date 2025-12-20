@@ -59,4 +59,34 @@ No django não trabalhamos diretamente no projeto, mas sim com apps. Para isso, 
 
 <mark style="background: #FF5582A6;">!!! Lembrando que os apps são completamente distintos um do outro !!!!</mark>
 
-Dica: se as coisas estiverem associadas, cria tudo no mesmo app, se forem coisas muito
+Dica: se as coisas estiverem associadas, cria tudo no mesmo app, se forem coisas muito distintas, apps separados.
+
+-  Para começar um novo app, usamos o comando *startapp*
+
+```cmd
+python manage.py startapp blog
+```
+
+Isso gera uma pasta com o nome do app com alguns arquivos que podemos modificar.
+
+-  admin.py - registra os models (pode configurar)
+-  apps.py - configuração do app 
+-  models.py - cria os models
+-  tests.py - cria os tests
+-  view.py - o "retorno" das páginas
+
+Existem dois tipos de views, baseadas em _função_ e tem também as views baseadas em _classes_
+
+##### ~={green}O que acontece se eu tiver muitos caminhos dentro de um?=~
+
+Por exemplo, dentro do app blog eu ter: comments, categories, authors... fica muito repetitivo. Para solucionar esse problema, podemos criar um arquivo "urls" na pasta do app
+
+Para aninhar URLs eu insiro no arquivo urls.py a função "include" e dentro dela eu passo o caminho da url que eu quero
+
+```python
+urlpatterns = [
+	path("", include("home.urls")),
+	path("blog/", blog_views.blog),
+	path
+]
+```
