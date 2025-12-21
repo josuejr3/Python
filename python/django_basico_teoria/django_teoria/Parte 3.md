@@ -116,7 +116,9 @@ urlpatterns = [
 Entretanto, para que isso funcione corretamente, a view deve receber o argumento, que nesse caso vai ser o id.
 
 ```python
-def post(request)
+def post(request, id):
+	context = {"posts": posts}
+	return render(request, "blog/index.html", context)
 
 
 urlpatterns = [
@@ -126,3 +128,12 @@ urlpatterns = [
 ]
 ```
 
+É importante informar o tipo
+
+```python
+urlpatterns = [
+	path("", views.blog, name="home"),
+	path("post/<int:id>", views.blog, name="post"), ## <<<<<<<< USO DO <id>
+	path("exemplo/", views.exemplo, name="exemplo"),
+]
+```
