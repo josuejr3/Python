@@ -25,8 +25,21 @@ Basicamene toda vez que for usar coisas estáticas em um arquivo deve-se usar o 
 ```
 
 Para evitar ter conflitos de nomes devemos fazer o que fizemos anteriormente, dentro da pasta static criar uma nova pasta com o nome da pasta mãe e dentro dela colocar uma pasta para css, js, imagens e entre outros.
-
 ##### STATIC_URLS
 
 ##### STATIC_FILES_DIRS
 
+#### Usando o context para enviar dados para dentro de templates do Django
+
+O context é um argumento do render que serve para escrever na página conseguimos pegar esse valor armazenado e jogar no html. O tipo é um dicionário com várias variáveis que podem ser usadas.
+
+```python
+def home(request):  
+    return render(  
+        request,  
+        'home.html',  
+        {  
+            'text': 'Estamos na home'  
+        }  
+    )
+```

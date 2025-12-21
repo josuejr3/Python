@@ -10,4 +10,7 @@ def my_view(request):
     return render(
         request,
         'global/index.html',
+        {
+            'text': 'Oie'
+        }
     )
