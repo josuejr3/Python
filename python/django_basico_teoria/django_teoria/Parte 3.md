@@ -45,3 +45,84 @@ def home(request):
 ```
 
 -  Não é possível blocks com includes
+
+---
+##### Fazendo laço for no django
+
+```python
+from . import data
+
+def blog(request):
+	print("blog")
+	
+	context = {
+		"text": "Olá blog",
+		"posts": data.posts
+	}
+	
+	return render (
+		request,
+		"blog/index.html",
+		context
+	)
+```
+
+O for vai dentro do arquivo HTML
+
+```html
+{% block posts %}
+	{% for post in posts %}
+		{% include "global/partials/postblock.html" %}
+	{% endfor %}
+{% endblock posts %}
+```
+
+##### If e elses com django
+
+```html
+{% if %}
+	...
+{% endif %}
+```
+
+```html
+{% if %}
+
+{% elif $}
+
+{% elif $}
+
+{% elif $}
+
+{% elif $}
+
+{% else %}
+
+{% endif %}
+```
+
+#### URLs dinâmicas
+
+Para deixar uma URL dinâmica temos que alterar um dos códigos presentes noa rquivo urls.py em urlpatterns. 
+
+```python
+urlpatterns = [
+	path("", views.blog, name="home"),
+	path("post/<id>", views.blog, name="post"), ## <<<<<<<< USO DO <id>
+	path("exemplo/", views.exemplo, name="exemplo"),
+]
+```
+
+Entretanto, para que isso funcione corretamente, a view deve receber o argumento, que nesse caso vai ser o id.
+
+```python
+def post(request)
+
+
+urlpatterns = [
+	path("", views.blog, name="home"),
+	path("post/<id>", views.post, name="post"), ## <<<<<<<< USO DO <id>
+	path("exemplo/", views.exemplo, name="exemplo"),
+]
+```
+
