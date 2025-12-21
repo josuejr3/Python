@@ -43,3 +43,5 @@ def home(request):
         }  
     )
 ```
+
+-  Não é possível blocks com includes
