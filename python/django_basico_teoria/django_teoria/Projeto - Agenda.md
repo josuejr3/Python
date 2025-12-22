@@ -148,5 +148,30 @@ python manage.py makemigrations
 
 Para aplicar essa modificações na base de dados, usamos o comando
 
-```py
+```python
+python manage.py migrate
 ```
+
+-  Agora precisamos registrar o model criado no arquivo "admin.py" da pasta contacts
+
+```python
+from django.contrib import admin  
+  
+from contact.models import Contact  
+  
+# Register your models here.  
+  
+# Essa classe vai funcionar como uma configuração do model na Admin do Django  
+@admin.register(Contact)  
+class ContactAdmin(admin.ModelAdmin):  
+    ...
+```
+
+E na classe do model adicionamos o método mágico de string
+
+```python
+def __str__(self) -> str:  
+    return f"{self.first_name} {self.last_name}"
+```
+
+
