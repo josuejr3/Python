@@ -110,3 +110,43 @@ python manage.py changepassword josuejunior
 
 -  No settings.py vamos ter as configurações do banco de dados em *"DATABASES"*
 
+		https://docs.djangoproject.com/pt-br/4.2/topics/db/models/
+
+		https://docs.djangoproject.com/pt-br/4.2/ref/models/fields/#field-choices
+
+---
+##### Criando primeiro Model
+
+Criamos o primeiro model conforme o código abaixo.
+
+```python
+from django.db import models  
+from django.utils import timezone  
+  
+# Create your models here.  
+  
+# Model de Contato  
+  
+class Contact(models.Model):  
+  
+    # Dados do Contato, o blank deixa como opcional  
+  
+    first_name = models.CharField(max_length=50)  
+    last_name = models.CharField(max_length=50, blank=True)  
+    phone_number = models.CharField(max_length=15)  
+    email = models.EmailField(max_length=254, blank=True)  
+  
+    created_date = models.DateTimeField(default=timezone.now)  
+    description = models.TextField(blank=True)
+```
+
+Em seguida, executamos o comando
+
+```python
+python manage.py makemigrations
+```
+
+Para aplicar essa modificações na base de dados, usamos o comando
+
+```py
+```
