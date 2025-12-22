@@ -87,3 +87,26 @@ path("", views.index)
 #### Criando e editando a senha de um super usuário Django
 
 O Django trabalha com migrations e basicamente toda vez que uma alteração é feita nas models significa que você está trabalhando na base de dados.
+
+-  Basicamente as migrations servem para fazer ou desfazer alguma coisa do banco de dados.
+
+13.  Fazemos a primeira migration usando
+
+```python
+python manage.py migrate
+```
+
+Agora podemos acessar o "/admin" e logar como super user, porém, precisamos criar esse super user
+
+-  O super usuário vai ter acesso quase que completo dentro da base de dados do django (incluindo acesso à area administrativa)
+
+-  Existem validadores de senha que ficam no settings.py e estão em "*AUTH_PASSOWORD_VALIDATORS*"
+
+-  Se a senha for esquecida você pode alterar  senha executando
+
+```python
+python manage.py changepassword josuejunior
+```
+
+-  No settings.py vamos ter as configurações do banco de dados em *"DATABASES"*
+
