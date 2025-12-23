@@ -182,3 +182,4 @@ def __str__(self) -> str:
 
 
 
+> O que é um collectstatic?
