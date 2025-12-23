@@ -102,6 +102,10 @@ Agora podemos acessar o "/admin" e logar como super user, porém, precisamos cri
 
 -  Existem validadores de senha que ficam no settings.py e estão em "*AUTH_PASSOWORD_VALIDATORS*"
 
+```python
+python manage.py createsuperuser
+```
+
 -  Se a senha for esquecida você pode alterar  senha executando
 
 ```python
