@@ -174,4 +174,11 @@ def __str__(self) -> str:
     return f"{self.first_name} {self.last_name}"
 ```
 
+> Podemos usar o shell interativo do Django para fazer consultas de Models 
+
+	Obs: o blank só valida no formulário, no shell não
+
+
+
+
 
