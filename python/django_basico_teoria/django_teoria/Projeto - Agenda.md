@@ -182,8 +182,4 @@ def __str__(self) -> str:
 
 	Obs: o blank só valida no formulário, no shell não
 
-
-
-
-
 > O que é um collectstatic?
