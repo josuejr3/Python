@@ -183,3 +183,17 @@ def __str__(self) -> str:
 	Obs: o blank só valida no formulário, no shell não
 
 > O que é um collectstatic?
+
+
+
+---
+##### Local Settings
+
+Quando for para um servidor, os parâmetros e configurações vão ter que ser alteradas. Para rodar em qualquer lugar, como num servidor, é importante ter um arquivo com as configurações locais que chamamos de "*localsettings*".
+
+##### Simulando Arquivos
+
+Como vão ser necessárias muitas views, vamos simular o arquivo views.py a partir de um pacote python.
+
+
+
