@@ -196,4 +196,8 @@ Quando for para um servidor, os parâmetros e configurações vão ter que ser a
 Como vão ser necessárias muitas views, vamos simular o arquivo views.py a partir de um pacote python.
 
 
+##### Injetando todos os contatos dentro do contexto do template index
 
+1.  Aplicamos o CSS no template para que pudessemos ver na página
+2.  No HTML base e dentro do body criamos o bloco *"content"* que é basicamente onde vai ficar o "miolo" do site
+3.  Dentro desse bloco criamos um "*main*"
