@@ -222,3 +222,6 @@ def index(request):
         context  
     )
 ```
+
+##### Criação de páginas individuais para contatos
+
