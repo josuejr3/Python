@@ -267,3 +267,10 @@ contacts = Contact.objects.filter(show=True).filter(
 
 Ambos os filtros envolvidos pela função Q e separados por um | que substitui a vírgula
 
+> Link
+
+https://docs.djangoproject.com/en/4.2/ref/models/querysets/#field-lookups
+
+##### Paginação
+
+
