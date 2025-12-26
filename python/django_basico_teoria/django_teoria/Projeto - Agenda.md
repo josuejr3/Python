@@ -273,4 +273,16 @@ https://docs.djangoproject.com/en/4.2/ref/models/querysets/#field-lookups
 
 ##### Paginação
 
+https://docs.djangoproject.com/en/4.2/topics/pagination/
+
+
+> CSRF
+
+	Esse problema do CSRF acontece apenas em forms do tipo POST. No formulário temos que colocar
+
+```django HTML
+{% csrf_token %}
+```
+
+Isso gera um input escondido de um token
 
