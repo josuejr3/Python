@@ -223,5 +223,3 @@ def index(request):
     )
 ```
 
-##### Criação de páginas individuais para contatos
-
