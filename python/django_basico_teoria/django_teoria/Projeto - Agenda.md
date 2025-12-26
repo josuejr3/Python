@@ -223,3 +223,47 @@ def index(request):
     )
 ```
 
+##### Busca com contains
+
+```python
+def search(request):  
+  
+    search_value = request.GET.get('query', '').strip()  
+  
+    # Se for uma consulta inválida ele volta pra index  
+    if search_value == '':  
+        return redirect('contact:index')  
+  
+    contacts = Contact.objects.filter(show=True).filter(first_name__icontains=search_value).order_by('-id')[10:20]  
+  
+    context = {  
+        'contacts': contacts,  
+        'site_tile': "Search - "  
+    }  
+  
+    return render(  
+        request,  
+        'contact/index.html',  
+        context  
+    )
+```
+
+Nesse caso a sintaxe é usada dentro da função filter com o nome do campo que eu quero procurar, seguido de dois underlines e com icontains por exemplo, porém pode ser outra forma de busca e igualar ao valor que se deseja, que nesse caso é o search value
+
+Se colocarmos mais argumentos na função filter basicamente o django faz um and de tudo, para usarmos o or precisamos de uma função especial
+
+```python
+from django.db.models import Q
+```
+
+A consulta fica assim
+
+```python
+contacts = Contact.objects.filter(show=True).filter(  
+    Q(first_name__icontains=search_value) |  
+    Q(last_name__icontains=search_value)  
+).order_by('-id')
+```
+
+Ambos os filtros envolvidos pela função Q e separados por um | que substitui a vírgula
+
