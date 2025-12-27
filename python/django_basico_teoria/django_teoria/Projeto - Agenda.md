@@ -334,3 +334,34 @@ class ContactForm(forms.ModelForm):
 		label='Prmeiro Nome'
 	)
 ```
+
+##### Validação
+
+Para a validação normalmente usamos o método *clean*. Esse método pode ser tanto para todos os dados, ou seja, um mais "geral", como podemos fazer um método para cada campo, veja o exemplo
+
+```python
+# Outra forma de validação clean + nome do campo  
+def clean_first_name(self):  
+  
+    cleaned_data = self.cleaned_data.get('first_name')  
+    if cleaned_data == 'ABC':  
+        raise ValidationError('Não digite ABC nesse campo', code='invalid')  
+    return cleaned_data
+```
+
+Outra maneira "mistura" as duas formas
+
+```python
+def clean_first_name(self):
+	first_name = self.cleaned_data.get("first_name")
+	
+	if first_name == "ABC":
+		self.add_error(
+			"first_name",
+			ValidationError(
+				"Veio do add_error",
+				
+			)
+		)
+
+```
