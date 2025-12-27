@@ -286,3 +286,51 @@ https://docs.djangoproject.com/en/4.2/topics/pagination/
 
 Isso gera um input escondido de um token
 
+##### Formulários
+
+Uma das formas de configurar os campos de formulários no django é por widgets.
+
+> https://docs.djangoproject.com/en/6.0/ref/forms/widgets/
+
+> Exemplo alterando configurações do campo "First Name" através do widget
+
+```python
+# Altera o tipo da entrada de texto para password, poderia ser um TextArea também  
+widgets = {  
+    'first_name': forms.TextInput(  
+        # O attrs são atributos do campo, classe, placeholder..  
+        attrs={  
+            'placeholder': 'First Name',  
+            # 'maxlength': 50,  
+        }  
+    ),  
+}
+```
+
+Lembrando que nesse caso o widget deve estar dentro da meta classe do contactform
+
+Outra opção é usar o init da classe contactform
+
+```python
+class ContactForm(forms.ModelForm):  
+  
+    def __init__(self, *args, **kwargs):  
+        super().__init__(*args, **kwargs)  
+  
+        # Outra forma sem usar o widget diretamente  
+        self.fields['first_name'].widget.attrs.update(  
+            {'placeholder': 'First Name', }  
+        )
+```
+
+E uma terceira opção é criar o campo direto na classe, assim
+
+```python
+class ContactForm(forms.ModelForm):
+	first_name = forms.CharField(
+		widget=forms.TextInput(
+			attrs={'placeholder': 'Teste'}
+		),
+		label='Prmeiro Nome'
+	)
+```
