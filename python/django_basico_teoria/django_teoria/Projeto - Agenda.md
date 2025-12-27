@@ -360,8 +360,50 @@ def clean_first_name(self):
 			"first_name",
 			ValidationError(
 				"Veio do add_error",
-				
+				code="invalid"
 			)
 		)
-
+		
+	return first_name
 ```
+
+Outro exemplo
+
+```python
+def clean(self):  
+    cleaned_data = self.cleaned_data  
+    first_name = cleaned_data.get('first_name')  
+    last_name = cleaned_data.get('last_name')  
+  
+    if first_name == last_name:  
+        self.add_error('first_name', ValidationError("O primeiro nome nao pode ser igual ao segundo"))  
+  
+  
+    return super().clean()
+```
+
+##### Salvando
+
+Uma vez com o forms preenchido é importante identificar se ele detectou algum erro. Para isso precisamos instanciar fora o *contactForm* na view
+
+```python
+def create(request):  
+  
+    if request.method == 'POST':  
+        # O que passamos para o get é o nome do input que queremos  
+        #print(request.POST.get('first_name'))  
+        form = ContactForm(request.POST)
+```
+
+Com isso, usamos o método de validação
+
+```python
+context = {'form': form}  
+  
+# Só retorna true se o form não tiver NENHUM erro  
+if form.is_valid():  
+    form.save()
+```
+
+Se nenhum erro foi detectado, salvamos com o save.
+
