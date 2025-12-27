@@ -407,3 +407,17 @@ if form.is_valid():
 
 Se nenhum erro foi detectado, salvamos com o save.
 
+> Commit
+
+O commit é um parâmetro da função save que serve para confirmar se a mudança vai direto para o banco de dados (True) ou se não. Além disso, o form.save pode ser armazenado em alguma variável para que seja feita alguma manipulação, caso necessário.
+
+```python
+if form.is_valid():
+	contact = form.save(commit=False)
+	contact.show = False
+	contact.save()
+```
+
+
+
+
